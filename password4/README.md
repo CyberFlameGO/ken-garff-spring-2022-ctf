@@ -1,0 +1,3 @@
+# Password 4 / Reverse Engineering 4
+
+This one was called Unreadable, for a good reason too. With 26 functions all to obfuscate what the program does. I rewrote the obfuscation functions in TypeScript so I could make a bit more sense of what I was doing. After about 3 hours of staring at it trying to figure out a way to reverse engineer the functions by taking the final output and turning back into the ASCII values. This did not work. Then I realized I could create a lookup table by passing every character we thought would be in the flag by previous experience, and running it through the obfuscation algorithm to get what it would be, then using that to decode the flag.

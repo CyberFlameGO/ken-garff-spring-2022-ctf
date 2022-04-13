@@ -1,0 +1,3 @@
+# Password 5 / Reverse Engineering 5
+
+This one was both very fun and very evil, titled Esoteric, the program we were asked to reverse engineer was written in an esoteric language called [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck), it was tricky to solve. Without explaining how the whole language works off the bat, pretty much the only way to construct strings in the language is by incrementing a cell to its ASCII value, which can be done with the number of increment commands it would take to get to the number of the ASCII value of the character you want. I wrote a regular expression to find all of those and then extracted them and left them in things.txt.
