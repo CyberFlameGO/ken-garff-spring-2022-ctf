@@ -70,7 +70,6 @@ async function checkLength(maxLength: number) {
   return lengthFound;
 }
 
-// checkLength(1000);
 async function constructPassword() {
   let length = await checkLength(1000);
   let password = '';
