@@ -10,7 +10,7 @@ giveupTimeout = null;
     }
   }
   if (JSON.parse(localStorage.getItem('user')).username === messageSender) {
-    giveupTimeout = setTimeout(giveup, 1000);
+    giveupTimeout = setTimeout(giveup, 10000);
     socket.on('msg', onMessagePayload);
   }
 })();
